@@ -1,0 +1,52 @@
+Dec 04 13:51:07.900 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Dec 04 13:51:07.901 HYPERVISOR: Started on IP = localhost, TCP port = 50776.
+Dec 04 13:51:08.380 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 04 13:51:08.380 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\kk291\Downloads\Proj1\project-files\dynamips 
+Dec 04 13:51:08.380 GENERAL: working_dir=C:\Users\kk291\Downloads\Proj1\project-files\dynamips
+Dec 04 13:51:08.380 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\kk291\Downloads\Proj1\project-files\dynamips\95f65cab-d0cc-43c6-a9b4-e35914464e09 
+Dec 04 13:51:08.380 GENERAL: working_dir=C:\Users\kk291\Downloads\Proj1\project-files\dynamips\95f65cab-d0cc-43c6-a9b4-e35914464e09
+Dec 04 13:51:08.431 HYPERVISOR: exec_cmd: vm create R7 7 c7200 
+Dec 04 13:51:08.434 VM: VM R7 created.
+Dec 04 13:51:08.435 HYPERVISOR: exec_cmd: vm set_con_tcp_port R7 5009 
+Dec 04 13:51:08.435 HYPERVISOR: exec_cmd: c7200 get_mac_addr R7 
+Dec 04 13:51:08.435 HYPERVISOR: exec_cmd: vm get_status R7 
+Dec 04 13:51:08.435 HYPERVISOR: exec_cmd: vm slot_add_binding R7 0 0 C7200-IO-FE 
+Dec 04 13:51:08.437 HYPERVISOR: exec_cmd: vm set_disk0 R7 0 
+Dec 04 13:51:08.439 HYPERVISOR: exec_cmd: vm set_exec_area R7 64 
+Dec 04 13:51:08.439 HYPERVISOR: exec_cmd: vm get_status R7 
+Dec 04 13:51:08.439 HYPERVISOR: exec_cmd: vm set_idle_pc R7 0x606df838 
+Dec 04 13:51:08.439 HYPERVISOR: exec_cmd: vm set_ios R7 C:/Users/kk291/Downloads/Cisco 7200 124-24.T5/Cisco 7200 124-24.T5/c7200-adventerprisek9-mz.124-24.T5.image 
+Dec 04 13:51:08.442 HYPERVISOR: exec_cmd: c7200 set_mac_addr R7 ca07.401c.0000 
+Dec 04 13:51:08.442 HYPERVISOR: exec_cmd: vm set_nvram R7 512 
+Dec 04 13:51:08.442 HYPERVISOR: exec_cmd: vm set_ram R7 512 
+Dec 04 13:51:08.445 HYPERVISOR: exec_cmd: vm get_status R7 
+Dec 04 13:51:08.445 HYPERVISOR: exec_cmd: vm slot_remove_binding R7 0 0 
+Dec 04 13:51:08.446 HYPERVISOR: exec_cmd: vm get_status R7 
+Dec 04 13:51:08.446 HYPERVISOR: exec_cmd: vm slot_add_binding R7 0 0 C7200-IO-2FE 
+Dec 04 13:51:08.446 HYPERVISOR: exec_cmd: vm get_status R7 
+Dec 04 13:51:08.446 HYPERVISOR: exec_cmd: vm slot_add_binding R7 1 0 PA-4T+ 
+Dec 04 13:51:08.449 HYPERVISOR: exec_cmd: vm get_status R7 
+Dec 04 13:51:08.449 HYPERVISOR: exec_cmd: vm slot_add_binding R7 2 0 PA-2FE-TX 
+Dec 04 13:51:13.768 HYPERVISOR: exec_cmd: nio create_udp udp-37a6c6a3-7c41-4fc7-9178-0dd480dd0e75 10046 127.0.0.1 10047 
+Dec 04 13:51:14.093 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R7 0 0 udp-37a6c6a3-7c41-4fc7-9178-0dd480dd0e75 
+Dec 04 13:51:14.094 HYPERVISOR: exec_cmd: vm get_status R7 
+Dec 04 13:51:14.192 HYPERVISOR: exec_cmd: nio create_udp udp-d1ee92e0-eea9-45dc-8bf4-13ad6930ed05 10050 127.0.0.1 10051 
+Dec 04 13:51:14.192 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R7 0 1 udp-d1ee92e0-eea9-45dc-8bf4-13ad6930ed05 
+Dec 04 13:51:14.199 HYPERVISOR: exec_cmd: vm get_status R7 
+Dec 04 13:51:23.289 HYPERVISOR: exec_cmd: vm set_ghost_status R7 2 
+Dec 04 13:51:23.291 HYPERVISOR: exec_cmd: vm set_ghost_file R7 C:\Users\kk291\Downloads\Proj1\project-files\dynamips\c7200-adventerprisek9-mz.124-24.T5.image-512.ghost 
+Dec 04 13:51:23.291 HYPERVISOR: exec_cmd: vm get_status R7 
+Dec 04 13:51:23.309 HYPERVISOR: exec_cmd: vm set_config R7 configs\i7_startup-config.cfg 
+Dec 04 13:51:23.309 HYPERVISOR: exec_cmd: vm start R7 
+Dec 04 13:51:53.722 HYPERVISOR: exec_cmd: vm extract_config R7 
+Dec 04 13:56:18.073 HYPERVISOR: exec_cmd: vm get_status R7 
+Dec 04 13:56:18.074 HYPERVISOR: exec_cmd: vm stop R7 
+Dec 04 13:56:18.298 VM: VM R7 shutdown.
+Dec 04 13:56:18.302 HYPERVISOR: exec_cmd: vm extract_config R7 
+Dec 04 13:56:19.446 HYPERVISOR: exec_cmd: vm get_status R7 
+Dec 04 13:56:19.446 HYPERVISOR: exec_cmd: vm extract_config R7 
+Dec 04 13:56:19.450 HYPERVISOR: exec_cmd: vm delete R7 
+Dec 04 13:56:19.450 VM: VM R7 destroyed.
+Dec 04 13:56:19.452 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 04 13:56:19.877 HYPERVISOR: Stopped.
+Dec 04 13:56:19.877 GENERAL: reset done.
